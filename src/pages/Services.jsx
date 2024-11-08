@@ -25,13 +25,13 @@ const Services = () => {
                 background="bg-[rgb(38,153,251)]"
                 str={["Solutions That Work.", "Transforming Ideas Fast.", "Excellence in Action."]}
                 onClick={ButtonClick} // Pass the ButtonClick function here
-                titleClass="text-white text-4xl md:text-6xl font-anton font-bold"
+                titleClass="text-white text-3xl md:text-6xl font-anton font-bold"
                 subTitleClass="text-white text-xl md:text-2xl bg-black md:px-8 md:py-3 px-5 py-2 font-poppins font-semibold"
                 buttonClass="text-white bg-black px-3 py-2 md:px-5 md:py-3 rounded-lg font-poppins hover:opacity-80"
             />
             <div className='max-w-[1240px] mx-8 md:mx-auto h-[60rem] md:h-[20rem] my-10'>
                 <h1 className='text-5xl font-anton my-10 text-black text-center font-extrabold' id="1">
-                    What do we actually really?
+                    What Do we actually Do?
                 </h1>
                 <div className='md:grid grid-cols-3 gap-x-4'>
                     <HorizCard h2="Tailored Solutions" p="Personalized solutions for your business needs." logo={LuMonitorStop} />

@@ -8,7 +8,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='bg-[#2699fb] p-2 border-b-2 border-white'>
+    <header className='bg-bgcolor p-2 border-b-2 border-white'>
       <nav className=' flex max-w-[1240px] justify-between mx-auto items-center'>
         <div className="logo bg-black px-16 py-3 text-3xl text-white font-extrabold font-anton cursor-pointer hover:opacity-85 rounded-2xl">
           TechiLLA
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         </ul>
         {/* Responsive */}
-        <ul className={`md:hidden flex flex-col mr-6 justify-between p-6 gap-3 ${menuOpen ? 'block' : 'hidden'} absolute bg-blue-400 right-6 top-[80px]`}>
+        <ul className={`md:hidden flex flex-col mr-6 justify-between p-6 gap-3 ${menuOpen ? 'block' : 'hidden'} absolute bg-bgcolor right-6 top-[80px]`}>
           <NavItems to="/" label="Home" />
           <NavItems to="/services" label="Services" />
           <NavItems to="/resources" label="Resources" />

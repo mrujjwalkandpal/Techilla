@@ -1,11 +1,11 @@
 import React from 'react';
 import TypingAnim from '../mini-components/TypingAnim';
+import img from '../assets/bg.jpg'
 
 const Hero = ({
   title = "WE WILL HELP YOU TO",
   subTitle = "Learn with Us",
   buttonText = "Get Started",
-  background = "bg-[rgb(38,153,251)]",
   onClick,  // The onClick handler passed from the Home component
   str = ["Innovate.Succeed.", "Empowering Growth.", "Your Future, Our Focus."],
   titleClass = "text-white text-4xl md:text-7xl font-anton font-bold",
@@ -13,7 +13,7 @@ const Hero = ({
   buttonClass = "text-white bg-black px-3 py-2 md:px-5 md:py-3 rounded-lg font-poppins hover:opacity-80"
 }) => {
   return (
-    <div className={`w-full ${background} h-[80vh] md:h-[88vh] gap-4 flex flex-col justify-center items-center`}>
+    <div style={{ backgroundImage: `url(${img})` }} className={`w-full  h-[80vh] md:h-[88vh] gap-2 md:gap-4 flex flex-col justify-center items-center bg-cover bg-no-repeat`}>
       <p className={subTitleClass}>{subTitle}</p>
       <h1 className={titleClass}>{title}</h1>
       <div className="typingAnimation md:text-5xl text-white text-2xl font-anton font-bold">

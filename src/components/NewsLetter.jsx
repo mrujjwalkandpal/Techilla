@@ -3,7 +3,7 @@ import React from 'react'
 const NewsLetter = () => {
   return (
     <>
-      <div className="h-[400px] md:h-[250px] bg-[rgb(38,153,251)] flex flex-col md:flex-row justify-center items-center p-4 py-12 md:px-32 gap-4" id="container">
+      <div className="h-[400px] md:h-[250px] bg-bgcolor flex flex-col md:flex-row justify-center items-center p-4 py-12 md:px-32 gap-4" id="container">
         {/* Text content container */}
         <div className='w-full md:w-[50%] flex flex-col gap-4'>
             <h1 className='text-white text-4xl font-anton'>
