@@ -1,6 +1,6 @@
 import React from 'react';
 import TypingAnim from '../mini-components/TypingAnim';
-import img from '../assets/bg.jpg'
+import img from '../assets/bg.jpg';
 
 const Hero = ({
   title = "WE WILL HELP YOU TO",
@@ -13,7 +13,12 @@ const Hero = ({
   buttonClass = "text-white bg-black px-3 py-2 md:px-5 md:py-3 rounded-lg font-poppins hover:opacity-80"
 }) => {
   return (
-    <div style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${img})` }} className={`w-full  h-[80vh] md:h-[88vh] gap-2 md:gap-4 flex flex-col justify-center items-center bg-cover bg-no-repeat`}>
+    <div 
+      style={{
+        backgroundImage: `url(${img}), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))`
+      }} 
+      className={`w-full h-[80vh] md:h-[88vh] gap-2 md:gap-4 flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center`}>
+      
       <p className={subTitleClass}>{subTitle}</p>
       <h1 className={titleClass}>{title}</h1>
       <div className="typingAnimation md:text-5xl text-white text-2xl font-anton font-bold">

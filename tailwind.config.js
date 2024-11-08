@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'bgcolor': 'linear-gradient(to top right, #0ea5e9, #4f46e5)', // Sky 500 to Indigo 700 gradient
+        'bgcolor': 'linear-gradient(to bottom right, #0ea5e9, #4f46e5)', // Sky 500 to Indigo 700 gradient
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
