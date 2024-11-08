@@ -1,12 +1,13 @@
 import React from 'react';
 import TypingAnim from '../mini-components/TypingAnim';
 import img from '../assets/bg.jpg';
+import { Link } from 'react-router-dom';
 
 const Hero = ({
   title = "WE WILL HELP YOU TO",
   subTitle = "Learn with Us",
   buttonText = "Get Started",
-  onClick,  // The onClick handler passed from the Home component
+  onClick="/services",  // The onClick handler passed from the Home component
   str = ["Innovate.Succeed.", "Empowering Growth.", "Your Future, Our Focus."],
   titleClass = "text-white text-4xl md:text-7xl font-anton font-bold",
   subTitleClass = "text-white text-2xl md:text-3xl bg-black md:px-8 md:py-3 px-5 py-2 font-poppins font-semibold",
@@ -24,12 +25,11 @@ const Hero = ({
       <div className="typingAnimation md:text-5xl text-white text-2xl font-anton font-bold">
         <TypingAnim str={str} />
       </div>
-      <button
-        className={buttonClass}
-        onClick={onClick} // Use the passed onClick prop
-      >
-        {buttonText}
-      </button>
+      <Link to={onClick}>
+        <button className={buttonClass}>
+          {buttonText}
+        </button>
+      </Link>
     </div>
   );
 };

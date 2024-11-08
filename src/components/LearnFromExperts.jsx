@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from '../assets/img1.png'
+import { Link } from 'react-router-dom'
 
 const LearnFromExperts = () => {
     return (
@@ -18,7 +19,10 @@ const LearnFromExperts = () => {
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum minus, doloribus aperiam tenetur nihil tempore doloremque totam, id consectetur ipsa ex provident dolorum nesciunt iusto accusamus magnam. Officia, odio?
                     </p>
-                    <button className='text-white bg-black px-3 py-2 md:px-5 md:py-3 rounded-lg font-poppins hover:opacity-80'>Check Now</button>
+                    <Link to="/services">
+                        <button className='text-white w-full bg-black px-3 py-2 md:px-5 md:py-3 rounded-lg font-poppins hover:opacity-80'>Check Now</button>
+                    </Link>
+                    
                 </div>
             </div>
         </>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import NavItems from '../mini-components/NavItems'
+import { Link } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   let [menuOpen, setMenuOpen] = useState(false)
@@ -10,10 +11,9 @@ const Navbar = () => {
   return (
     <header className='bg-bgcolor p-2 border-b-2 border-white'>
       <nav className=' flex max-w-[1240px] justify-between mx-auto items-center'>
-        <div className="logo bg-black px-16 py-3 text-3xl text-white font-extrabold font-anton cursor-pointer hover:opacity-85 rounded-2xl">
+      <Link to="/" className="logo bg-black px-16 py-3 text-3xl text-white font-extrabold font-anton cursor-pointer hover:opacity-85 rounded-2xl">
           TechiLLA
-        </div>
-
+        </Link>
         <ul className='hidden md:flex justify-between space-x-5'>
 
           <NavItems to="/" label="Home" />

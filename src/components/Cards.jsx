@@ -14,6 +14,7 @@ const Cards = () => {
 
     return (
         <>
+            <div className='h-[110rem] md:h-[43rem]'>
             <h1 className='text-center mt-12 font-anton text-6xl'>Our Services</h1>       
             <div className="max-w-[1240px] gap-8 mx-auto my-6 w-full h-[1500px] md:h-[450px] md:grid grid-cols-3">
                 <CardComponent 
@@ -50,6 +51,7 @@ const Cards = () => {
                     }} 
                     btn={btn} 
                 />
+            </div>
             </div>
         </>
     )
