@@ -6,7 +6,7 @@ import Cards from '../components/Cards'
 const Home = () => {
   return (
     <>
-    <Hero/>
+    <Hero p="Learn with Us"/>
     <LearnFromExperts/>
     <NewsLetter/>
     <Cards/>

@@ -17,23 +17,23 @@ const Navbar = () => {
         <ul className='hidden md:flex justify-between space-x-5'>
 
           <NavItems to="/" label="Home" />
-          <NavItems to="/company" label="Company" />
+          <NavItems to="/services" label="Services" />
           <NavItems to="/resources" label="Resources" />
           <NavItems to="/about" label="About" />
           <NavItems to="/contact" label="Contact" />
 
         </ul>
         {/* Responsive */}
-        <ul className={`md:hidden flex flex-col justify-between p-6 gap-3 ${menuOpen ? 'block' : 'hidden'} absolute bg-blue-400 right-6 top-[80px]`}>
+        <ul className={`md:hidden flex flex-col mr-6 justify-between p-6 gap-3 ${menuOpen ? 'block' : 'hidden'} absolute bg-blue-400 right-6 top-[80px]`}>
           <NavItems to="/" label="Home" />
-          <NavItems to="/company" label="Company" />
+          <NavItems to="/services" label="Services" />
           <NavItems to="/resources" label="Resources" />
           <NavItems to="/about" label="About" />
           <NavItems to="/contact" label="Contact" />
 
         </ul>
-        <AiOutlineMenu onClick={toggleMenu} className={`text-white text-2xl block md:hidden ${menuOpen ? "hidden" : "block"}`} />
-        <AiOutlineClose onClick={toggleMenu} className={`text-white text-2xl block md:hidden ${menuOpen ? "block" : "hidden"}`} />
+        <AiOutlineMenu onClick={toggleMenu} className={`text-white text-2xl mr-5 block md:hidden ${menuOpen ? "hidden" : "block"}`} />
+        <AiOutlineClose onClick={toggleMenu} className={`text-white text-2xl mr-5 block md:hidden ${menuOpen ? "block" : "hidden"}`} />
 
       </nav>
     </header>

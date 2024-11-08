@@ -44,9 +44,9 @@ const Cards = () => {
                     price={"$89"} 
                     img={<BsGraphUpArrow className='w-[100px] h-auto bg-slate-100 p-3 rounded-full '/>}
                     list={{
-                        1:"Drive Engagement. Boost Growth.",
-                        2:"Reach Audiences. Maximize Impact.",
-                        3:"Optimize Campaigns. Amplify Results.",
+                        1:"Boost Engagement and Growth.",
+                        2:"Reach Maximize Impact.",
+                        3:"Optimize and Amplify Results.",
                     }} 
                     btn={btn} 
                 />
