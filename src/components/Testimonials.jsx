@@ -3,7 +3,7 @@ import React from 'react'
 
 const Testimonials = ({ img, h1, p }) => {
     return (
-      <div className='bg-white px-10 py-10 md:my-0 my-10 rounded-lg shadow-xl hover:scale-105 duration-500'>
+      <div className='bg-white px-10 py-10 md:my-0 my-8 rounded-lg shadow-xl hover:scale-105 duration-500'>
         <div className='flex flex-col items-center'>
           <div className='mb-4'>
             <img className="object-cover mx-auto w-[120px] h-[120px] rounded-full" src={img} alt="Testimonial" />

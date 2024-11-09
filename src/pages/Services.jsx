@@ -11,9 +11,7 @@ import { LuMonitorStop } from "react-icons/lu";
 import { FaChalkboardTeacher, FaRocket, FaPlug, FaUserCircle, FaTools, FaCogs, FaSearchDollar } from "react-icons/fa"; // Importing icons directly
 
 const Services = () => {
-    const ButtonClick = () => {
-        console.log('Button clicked'); // Check if this is logged when the button is clicked
-        
+    const ButtonClick = () => {        
         const targetElement = document.getElementById('1');
         if (targetElement) {
             console.log('Scrolling to element:', targetElement); // Ensure target element is found
@@ -52,7 +50,7 @@ const Services = () => {
                     <HorizCard h2="Affordable Prices" p="High-quality services at competitive prices." logo={FaSearchDollar} />
                 </div>
             </div>
-            <div className='bg-bgcolor h-[105rem] items-center md:h-[45rem] mt-[11rem] w-full p-10 md:px-24'>
+            <div className='bg-bgcolor  items-center md:h-[45rem] mt-[11rem] w-full p-10 md:px-24'>
             <h1 className='text-6xl text-white font-anton text-center mb-10'>
                 Testimonials.
             </h1>
